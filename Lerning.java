@@ -11,11 +11,11 @@ public class Lerning {
         String  number1 = "4123456789101234";
         String  memberName1 = "TARO SHIMIZU";
         String  brand1 = "VISA";
-        Date    validThru1;
+        Date    validThrough1;
         SimpleDateFormat dateTimeFormat = new SimpleDateFormat("yyyy/MM");
-        validThru1 = dateTimeFormat.parse("2022/08");
+        validThrough1 = dateTimeFormat.parse("2022/08");
 
-        CreditCard creditCard1 = new CreditCard(icChip1, number1, memberName1, brand1, validThru1);
+        CreditCard creditCard1 = new CreditCard(icChip1, number1, memberName1, brand1, validThrough1);
 
         System.out.println("*** isValid ***");
         //有効期限前
@@ -32,20 +32,20 @@ public class Lerning {
         CreditCard tmp = creditCard1;
 
         //カード２
-        CreditCard creditCard2 = new CreditCard(icChip1, number1, memberName1, brand1, validThru1);
+        CreditCard creditCard2 = new CreditCard(icChip1, number1, memberName1, brand1, validThrough1);
 
         //カード３
         String  icChip3 = "hijklmn";
         String  number3 = "4123456789101111";
         String  memberName3 = "JIRO SHIMIZU";
         String  brand3 = "VISA";
-        Date    validThru3;
-        validThru3 = dateTimeFormat.parse("2021/08");
-        CreditCard creditCard3 = new CreditCard(icChip3, number3, memberName3, brand3, validThru3);
+        Date    validThrough3;
+        validThrough3 = dateTimeFormat.parse("2021/08");
+        CreditCard creditCard3 = new CreditCard(icChip3, number3, memberName3, brand3, validThrough3);
 
         //カード４
         String  number4 = "4123456789102222";
-        CreditCard creditCard4 = new CreditCard(icChip1, number4, memberName1, brand1, validThru1);
+        CreditCard creditCard4 = new CreditCard(icChip1, number4, memberName1, brand1, validThrough1);
 
         //equals
         System.out.println("*** equals ***");
